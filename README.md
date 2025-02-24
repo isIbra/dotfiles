@@ -2,6 +2,10 @@
 
 ## Files
 
-### Directory.Build.props is for silencing comprehensive and annoying dotnet warnings when running the app
+### `Directory.Build.props`
 
-### settings.json is for VSCode custom settings and ricing the Env
+Silences comprehensive and annoying dotnet warnings when running the app.
+
+### `settings.json`
+
+Contains custom settings for VSCode and environment customization.
