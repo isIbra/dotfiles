@@ -1,0 +1,168 @@
+// EDITOR APPEARANCE
+{
+  "workbench.colorTheme": "flat dark+", // Theme selection. Alternatives: ["Tokyo Night", "Catppuccin", "GitHub Theme"], Recommended: Based on preference
+  "workbench.iconTheme": "material-icon-theme", // File icons. Alternatives: ["vscode-icons", "seti", "simple-icons"], Recommended: material-icon-theme
+  "editor.fontFamily": "JetBrains Mono, 'Fira Code', monospace", // Code font. Alternatives: ["Cascadia Code", "Source Code Pro", "Hack"], Recommended: Any font with ligatures
+  "editor.fontSize": 14, // Font size. Alternatives: [12, 13, 15, 16], Recommended: 14-16 based on screen
+  "editor.fontLigatures": true, // Special character combinations. Alternatives: [false], Recommended: true for modern look
+  "editor.lineHeight": 1.5, // Line spacing. Alternatives: [1.3, 1.4, 1.6, 1.8], Recommended: 1.4-1.6
+  "editor.letterSpacing": 0.5, // Character spacing. Alternatives: [0, 0.3, 0.7, 1], Recommended: 0.3-0.7
+  "editor.cursorBlinking": "phase", // Cursor animation. Alternatives: ["solid", "blink", "smooth", "expand"], Recommended: phase/smooth
+  "editor.cursorSmoothCaretAnimation": "on", // Smooth cursor movement. Alternatives: ["off"], Recommended: on for modern feel
+  "editor.renderWhitespace": "selection", // Show whitespace chars. Alternatives: ["all", "boundary", "none", "trailing"], Recommended: selection or boundary
+  "editor.guides.bracketPairs": true, // Bracket guides. Alternatives: [false], Recommended: true for nested code
+  "editor.bracketPairColorization.enabled": true, // Colored brackets. Alternatives: [false], Recommended: true for readability
+  "editor.smoothScrolling": true, // Smooth scroll. Alternatives: [false], Recommended: true for better experience
+  "editor.minimap.enabled": false, // Terminal text size. Alternatives: [12-16], Recommended: Match editor fontSize
+  "terminal.integrated.fontFamily": "JetBrains Mono", // Terminal font. Alternatives: ["Menlo", "Monaco", "Consolas"], Recommended: Match editor font
+  "terminal.integrated.cursorBlinking": true, // Terminal cursor blink. Alternatives: [false], Recommended: true
+  "terminal.integrated.cursorStyle": "line", // Cursor type. Alternatives: ["block", "underline"], Recommended: personal preference
+  "terminal.integrated.gpuAcceleration": "on", // GPU usage. Alternatives: ["off", "auto"], Recommended: on for performance
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.focusAfterRun": "terminal", // Prevents terminal from stealing focus, Alternative: true, recommended: false
+  "workbench.startupEditor": "none" ,
+  // WINDOW AND WORKBENCH
+  "window.titleBarStyle": "custom", // Window title style. Alternatives: ["native"], Recommended: custom for modern look
+  "window.menuBarVisibility": "toggle", // Menu bar. Alternatives: ["visible", "hidden", "compact"], Recommended: toggle for clean look
+  "workbench.startupEditor": "terminal", // Startup view. Alternatives: ["welcomePage", "newUntitledFile", "readme"], Recommended: based on workflow
+  "Au": false,
+  // FILE EXPLORER
+  "explorer.compactFolders": false, // Compact folders. Alternatives: [true], Recommended: false for better visibility
+  "explorer.confirmDelete": false, // Delete prompt. Alternatives: [true], Recommended: based on preference
+  "explorer.confirmDragAndDrop": false, // Drag&drop prompt. Alternatives: [true], Recommended: false for faster workflow
+  // EDITOR BEHAVIOR
+  "editor.tabSize": 2, // Indent size. Alternatives: [4, 8], Recommended: 2 for modern code
+  "editor.insertSpaces": true, // Spaces vs tabs. Alternatives: [false], Recommended: true for consistency
+  "editor.wordWrap": "off", // Auto-format. Alternatives: [false], Recommended: true for clean code
+  "editor.stickyScroll": true, // Keep context visible. Alternatives: [false], Recommended: true for better navigation
+  "editor.hover.delay": 200, // Tooltip delay (ms). Alternatives: [100-1000], Recommended: 200-300
+  // SCROLLING AND PERFORMANCE
+  "editor.mouseWheelScrollSensitivity": 1.5, // Mouse scroll speed. Alternatives: [1-3], Recommended: 1.5-2
+  "editor.fastScrollSensitivity": 5, // Fast scroll speed. Alternatives: [3-10], Recommended: 5-7
+  "editor.multiCursorModifier": "alt", // Multi-cursor key. Alternatives: ["ctrlCmd"], Recommended: alt
+  // GIT SETTINGS
+  "git.enableSmartCommit": true, // Smart commits. Alternatives: [false], Recommended: true
+  "git.confirmSync": false, // Sync confirmation. Alternatives: [true], Recommended: false for workflow
+  "git.autofetch": true, // Auto fetch. Alternatives: [false], Recommended: true for updates
+  // COLOR CUSTOMIZATIONS
+  "workbench.colorCustomizations": {
+    // All borders set to #00000000 for invisible borders
+    // Alternatives: ["#ffffff10", "#rgba(255,255,255,0.1)"] for subtle borders
+    // Recommended: #00000000 for flat look
+  },
+  // SUGGESTIONS AND INTELLISENSE
+  "editor.suggestSelection": "first", // Suggestion focus. Alternatives: ["recentlyUsed", "recentlyUsedByPrefix"], Recommended: first
+  "editor.acceptSuggestionOnCommitCharacter": true, // Auto-accept suggestions. Alternatives: [false], Recommended: true
+  "editor.acceptSuggestionOnEnter": "smart", // Enter behavior. Alternatives: ["on", "off"], Recommended: smart
+  "editor.quickSuggestions": {
+    "other": true, // Code suggestions. Recommended: true
+    "comments": false, // Comment suggestions. Recommended: false
+    "strings": false // String suggestions. Recommended: false
+  },
+  // Debugger settings
+  "debug.internalConsoleOptions": "neverOpen", // Never open debug console, Alternative: "openOnSessionStart", recommended: "neverOpen"
+  "debug.openDebug": "openOnDebugBreak", // Only opens debug view on breakpoint, Alternative: "openOnDebugResolve", recommended: "openOnDebugBreak"
+  "debug.focusWindowOnBreak": false, // Focuses editor window on break, Alternative: false, recommended: true
+  "debug.focusEditorOnBreak": true, // Keeps focus on editor when hitting breakpoint, Alternative: false, recommended: true
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.showInStatusBar": "never", // Hide debug in status bar
+  "debug.toolBarLocation": "floating", // Hide debug toolbar
+  "terminal.integrated.enablePersistentSessions": false, // Move panel to right (optional)
+  "workbench.debug.openView": "neverOpen", // Never auto-open debug view
+  "workbench.panel.opensMaximized": "never", // Never maximize panels
+  "debug.hideLauncherWhileDebugging": false, // Keep debug launcher visible
+  // C# debugger settings
+  "csharp.debug.enableLaunchDebugger": true, // Keep C# debugger enabled
+  // "omnisharp.enableLspDriver": true, // Use LSP for better control
+  "csharp.debug.showExceptionNotification": false, // Don't pop up exception notifications
+  "csharp.suppressDotnetRestoreNotification": true, // Suppress restore notifications
+  "csharp.suppressDotnetInstallWarning": true, // Suppress install warnings
+  "csharp.suppressProjectJsonWarning": true, // Suppress project warnings
+  "csharp.suppressHiddenDiagnostics": true, // Suppress hidden diagnostics
+  "omnisharp.enableEditorConfigSupport": true, // Use EditorConfig
+  "csharp.suppressBuildAssetsNotification": false, // Suppress build assets notifications
+  // FILES HANDLING
+  "files.trimTrailingWhitespace": true, // Clean trailing spaces. Alternatives: [false], Recommended: true
+  "files.insertFinalNewline": true, // Add final newline. Alternatives: [false], Recommended: true
+  "files.trimFinalNewlines": true, // Auto save. Alternatives: ["off", "onFocusChange", "onWindowChange"], Recommended: afterDelay
+
+  // SEARCH SETTINGS
+  "search.smartCase": true, // Smart case search. Alternatives: [false], Recommended: true
+  "search.useGlobalIgnoreFiles": true, // Use gitignore. Alternatives: [false], Recommended: true
+  "search.exclude": {
+    // Standard excludes for better performance
+  },
+  // VISUALS AND NAVIGATION
+  "editor.renderLineHighlight": "all", // Line highlight. Alternatives: ["all", "line", "gutter"], Recommended: none for clean look
+  "workbench.tree.indent": 12, // Tree indent. Alternatives: [8-24], Recommended: 12-16
+  "workbench.tree.renderIndentGuides": "onHover", // Tree guides. Alternatives: ["onHover", "always"], Recommended: none for clean look
+  "editor.overviewRulerBorder": false, // Ruler border. Alternatives: [true], Recommended: false for clean look
+  "editor.hideCursorInOverviewRuler": true, // Hide cursor in ruler. Alternatives: [false], Recommended: true
+  "editor.folding": false, // Code folding. Alternatives: [true], Recommended: based on preference
+  "editor.glyphMargin": true, // Left margin icons. Alternatives: [true], Recommended: false for clean look
+  "workbench.layoutControl.enabled": false, // Layout controls. Alternatives: [true], Recommended: false for clean look
+  "breadcrumbs.enabled": false, // File path breadcrumbs. Alternatives: [true], Recommended: false for clean look
+  "editor.guides.indentation": true, // Indentation guides. Alternatives: [false], Recommended: true for clean look
+  // LINE NUMBERS AND DECORATIONS
+  "editor.lineNumbers": "on", // Show line numbers. Alternatives: ["off", "relative"], Recommended: on
+  "editor.lineDecorationsWidth": 24, // Left margin width. Alternatives: [16-48], Recommended: 24-32
+  // TABS AND SPLITS
+  "workbench.editor.showTabs": "multiple", // Tab visibility. Alternatives: ["single", "always"], Recommended: multiple
+  "workbench.editor.splitSizing": "distribute", // Split behavior. Alternatives: ["split"], Recommended: distribute
+  "workbench.editor.focusRecentEditorAfterClose": false, // Focus after close. Alternatives: [true], Recommended: false
+  // ZEN MODE
+  "zenMode.fullScreen": false, // Full screen zen. Alternatives: [true], Recommended: based on preference
+  "zenMode.hideActivityBar": true, // Hide activity bar. Alternatives: [false], Recommended: true for focus
+  "zenMode.hideLineNumbers": false, // Hide tabs. Alternatives: [true], Recommended: false
+  "zenMode.restore": true, // Restore zen settings. Alternatives: [false], Recommended: true
+  "zenMode.silentNotifications": true, // Quiet notifications. Alternatives: [false], Recommended: true for focus
+  // ULTRAWIDE SETTINGS
+  "editor.lineLength": 160, // Max line length. Alternatives: [80, 100, 160], Recommended: 120 for wide screens
+  // "editor.rulers": [80, 120],                       // Guide lines. Alternatives: [[100], [80, 100, 120]], Recommended: based on standards
+  "editor.lineNumbersWidth": 160, // Gutter width. Alternatives: [48-80], Recommended: 64 for comfort
+  "workbench.editor.wrapTabs": false,
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "accessibility.signalOptions.volume": 0,
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "glassit.alpha": 255,
+  "editor.accessibilitySupport": "off",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "terminal.integrated.fontSize": 13,
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "errorLens.enabledDiagnosticLevels": [
+    "info"
+  ],
+
+  "eslint.codeActionsOnSave.rules": null // Tab wrapping. Alternatives: [true], Recommended: false for ultrawide
+}
